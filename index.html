@@ -4,43 +4,96 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Gotham Media House Live</title>
+  <meta name="description" content="Private livestream portal for Gotham Media House clients and guests." />
+  <link rel="preconnect" href="https://www.youtube.com" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main class="page-shell">
-    <header class="hero">
-      <div class="brand-mark">GMH</div>
-      <p class="eyebrow">Private Livestream Portal</p>
-      <h1 data-site-title>Gotham Media House Live</h1>
-      <p data-site-subtitle>Private livestream access for clients and guests.</p>
+  <div class="bg-glow bg-glow-one"></div>
+  <div class="bg-glow bg-glow-two"></div>
+
+  <main class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="Gotham Media House Live home">
+        <span class="brand-mark">GMH</span>
+        <span>
+          <strong>Gotham Media House</strong>
+          <small>Private Livestream Portal</small>
+        </span>
+      </a>
+      <a class="contact-link" data-contact-link href="mailto:matthewdfox08@gmail.com">Need help?</a>
     </header>
 
-    <section class="event-list" data-event-list></section>
+    <section class="hero" data-home-hero>
+      <p class="eyebrow">Private Livestream Portal</p>
+      <h1 data-site-title>Gotham Media House Live</h1>
+      <p class="hero-copy" data-site-subtitle>Secure, client-ready livestream access for private events, town halls, meetings, and productions.</p>
+    </section>
 
-    <section class="access-card hidden" data-event-panel>
+    <section class="event-list" data-event-list aria-label="Available events"></section>
+
+    <section class="event-view hidden" data-event-panel>
       <a class="back-link" data-back-link href="/">← Back to events</a>
-      <p class="eyebrow" data-event-date>Private Event</p>
-      <h2 data-event-title>Client Live Event</h2>
-      <p data-event-description>Enter the event password to access the private livestream.</p>
 
-      <form class="password-form" data-password-form>
-        <label for="password">Event Password</label>
-        <input id="password" data-password-input type="password" autocomplete="off" placeholder="Enter password" />
-        <button type="submit">Watch Live</button>
-        <p class="error" data-error></p>
-      </form>
+      <div class="event-heading">
+        <p class="eyebrow" data-event-date>Private Event</p>
+        <h1 data-event-title>Client Live Event</h1>
+        <p data-event-description>Enter the event password to access the private livestream.</p>
+      </div>
 
-      <div class="player-wrap hidden" data-player-wrap>
-        <iframe
-          data-player
-          title="Live Stream"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen>
-        </iframe>
+      <div class="access-card" data-access-card>
+        <div class="card-header">
+          <span class="status-dot"></span>
+          <span>Protected Event Access</span>
+        </div>
+
+        <form class="password-form" data-password-form>
+          <label for="password">Event Password</label>
+          <div class="input-row">
+            <input id="password" data-password-input type="password" autocomplete="off" placeholder="Enter password" />
+            <button type="submit">Unlock Stream</button>
+          </div>
+          <p class="error" data-error></p>
+        </form>
+      </div>
+
+      <div class="player-card hidden" data-player-wrap>
+        <div class="player-topline">
+          <span>Live Player</span>
+          <span class="secure-label">Password Protected</span>
+        </div>
+        <div class="video-wrapper">
+          <iframe
+            data-player
+            title="Gotham Media House Live Stream"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <p class="privacy-note">🔒 This livestream is private. Please do not share this link or password.</p>
       </div>
     </section>
 
-    <footer>
+    <section class="info-grid" data-info-grid>
+      <article>
+        <span>01</span>
+        <h3>Private Access</h3>
+        <p>Each event can have its own link, title, description, password, and embedded YouTube Live stream.</p>
+      </article>
+      <article>
+        <span>02</span>
+        <h3>Client Ready</h3>
+        <p>Send guests a clean Gotham-branded page instead of sending them directly to YouTube.</p>
+      </article>
+      <article>
+        <span>03</span>
+        <h3>Easy Updates</h3>
+        <p>Edit one config file, commit to GitHub, and Vercel automatically updates the live website.</p>
+      </article>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-logo">GMH</div>
       <p>Produced by Gotham Media House</p>
     </footer>
   </main>

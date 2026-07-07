@@ -3,8 +3,8 @@
 
 window.GOTHAM_LIVE_CONFIG = {
   siteTitle: "Gotham Media House Live",
-  siteSubtitle: "Private livestream access for clients and guests.",
-  contactEmail: "info@gothammediahouse.com",
+  siteSubtitle: "Secure, client-ready livestream access for private events, town halls, meetings, and productions.",
+  contactEmail: "matthewdfox08@gmail.com",
 
   events: [
     {
@@ -13,7 +13,7 @@ window.GOTHAM_LIVE_CONFIG = {
       date: "July 2026",
       description: "Private livestream event hosted by Gotham Media House.",
       password: "gothamlive",
-      youtubeVideoId: "VcVEsj3bFBI"
+      youtubeVideoId: "REPLACE_VIDEO_ID"
     },
     {
       slug: "client-town-hall",
