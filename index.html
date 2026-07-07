@@ -7,45 +7,8 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="page-shell">
-    <header class="site-header">
-      <div class="brand-mark">GMH</div>
-      <div class="brand-sub">Gotham Media House</div>
-      <div class="kicker">Private Livestream Portal</div>
-      <h1 id="main-title">Gotham Media House Live</h1>
-      <p id="main-subtitle">Private livestream access for clients and guests.</p>
-    </header>
-
-    <main class="content-card" id="app">
-      <section id="access-panel" class="access-panel">
-        <p class="eyebrow">Private Event Access</p>
-        <h2 id="access-title">Enter Event Password</h2>
-        <p id="access-copy">This stream is password protected. Please enter the password provided by Gotham Media House.</p>
-        <form id="password-form" class="password-form">
-          <input id="password-input" type="password" placeholder="Event password" autocomplete="off" />
-          <button type="submit">Watch Event</button>
-        </form>
-        <p id="access-error" class="error-message" hidden>Incorrect password. Please try again.</p>
-      </section>
-
-      <section id="event-panel" class="event-panel" hidden>
-        <div class="event-meta" id="event-date"></div>
-        <h2 id="event-title"></h2>
-        <p id="event-description"></p>
-        <div class="video-frame">
-          <iframe id="youtube-player" title="Gotham Media House Live Stream" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-        <p class="private-note">🔒 This livestream is private and password protected. Please do not share this link.</p>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="footer-logo">GMH</div>
-      <div class="footer-sub">Gotham Media House</div>
-      <p>Produced by Gotham Media House</p>
-    </footer>
-  </div>
-
+  <div class="background-glow"></div>
+  <main id="app" class="app"></main>
   <script src="config.js"></script>
   <script src="script.js"></script>
 </body>

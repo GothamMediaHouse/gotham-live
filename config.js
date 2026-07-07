@@ -1,22 +1,29 @@
 window.GOTHAM_LIVE_CONFIG = {
-  // Do not show a public event list. Clients only access events by direct URL.
-  // Example client URL: https://live.gothammediahouse.com/?event=demo-event
+  brandName: "Gotham Media House",
+  brandLine: "Private Live Event Portal",
+  supportEmail: "info@gothammediahouse.com",
   events: [
     {
-      slug: "demo-event",
-      title: "Demo Live Event",
-      date: "July 2026",
-      description: "Private livestream event hosted by Gotham Media House.",
+      accessCode: "DEMO2026",
       password: "gothamlive",
-      youtubeVideoId: "REPLACE_VIDEO_ID"
+      slug: "demo-event",
+      title: "Demo Private Event",
+      client: "Gotham Media House",
+      date: "Live Event",
+      description: "This private livestream is available only to approved guests with an event access code and password.",
+      youtubeVideoId: "REPLACE_WITH_YOUTUBE_VIDEO_ID",
+      status: "LIVE"
     },
     {
-      slug: "client-town-hall",
-      title: "Client Town Hall",
-      date: "August 2026",
-      description: "Private livestream for invited guests only.",
-      password: "client2026",
-      youtubeVideoId: "REPLACE_VIDEO_ID"
+      accessCode: "ACME2026",
+      password: "acme123",
+      slug: "acme-town-hall",
+      title: "Annual Town Hall",
+      client: "ACME Corporation",
+      date: "July 15, 2026",
+      description: "Private town hall livestream produced by Gotham Media House.",
+      youtubeVideoId: "REPLACE_WITH_YOUTUBE_VIDEO_ID",
+      status: "PRIVATE"
     }
   ]
 };
