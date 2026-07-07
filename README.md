@@ -1,51 +1,15 @@
-# Gotham Media House Live — Premium Vercel Site
+# Gotham Live - Private Event Only Version
 
-Upload these extracted files to your GitHub repo root:
+Clients do not see a public event list. Give each client a direct link:
 
-- index.html
-- styles.css
-- script.js
-- config.js
-- vercel.json
-- README.md
+https://live.gothammediahouse.com/?event=demo-event
 
-Do not upload the ZIP itself.
+Edit `config.js` to add events. Each event needs:
+- slug
+- title
+- date
+- description
+- password
+- youtubeVideoId
 
-## Edit events
-
-Open `config.js` and edit the `events` list.
-
-Example:
-
-```js
-{
-  slug: "acme-town-hall",
-  title: "ACME Town Hall",
-  date: "August 2026",
-  description: "Private livestream for ACME guests.",
-  password: "acme2026",
-  youtubeVideoId: "YOUTUBE_VIDEO_ID"
-}
-```
-
-The event URL will be:
-
-`https://live.gothammediahouse.com/?event=acme-town-hall`
-
-or:
-
-`https://live.gothammediahouse.com/acme-town-hall`
-
-## YouTube video ID
-
-If your YouTube URL is:
-
-`https://www.youtube.com/watch?v=AbCdEf12345`
-
-Use:
-
-`youtubeVideoId: "AbCdEf12345"`
-
-## Deploy
-
-Commit the files to GitHub. Vercel will automatically redeploy.
+Important: This is suitable for basic client privacy on a static site. For true server-side security, use a backend later.

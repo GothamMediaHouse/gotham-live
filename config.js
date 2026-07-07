@@ -1,11 +1,6 @@
-// Gotham Media House Live Portal
-// Edit this file to add events, passwords, and YouTube Live embeds.
-
 window.GOTHAM_LIVE_CONFIG = {
-  siteTitle: "Gotham Media House Live",
-  siteSubtitle: "Secure, client-ready livestream access for private events, town halls, meetings, and productions.",
-  contactEmail: "matthewdfox08@gmail.com",
-
+  // Do not show a public event list. Clients only access events by direct URL.
+  // Example client URL: https://live.gothammediahouse.com/?event=demo-event
   events: [
     {
       slug: "demo-event",
@@ -18,8 +13,8 @@ window.GOTHAM_LIVE_CONFIG = {
     {
       slug: "client-town-hall",
       title: "Client Town Hall",
-      date: "July 2026",
-      description: "Password-protected client livestream.",
+      date: "August 2026",
+      description: "Private livestream for invited guests only.",
       password: "client2026",
       youtubeVideoId: "REPLACE_VIDEO_ID"
     }
