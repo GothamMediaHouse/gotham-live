@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gotham Media House Live</title>
+  <meta name="description" content="Private livestream portal for Gotham Media House clients." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo-mark">GMH</div>
+      <div>
+        <div class="brand-name">Gotham Media House</div>
+        <div class="brand-subtitle">Private Live Streaming Portal</div>
+      </div>
+    </div>
+    <div class="live-badge">LIVE PORTAL</div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">Secure client viewing</p>
+      <h1>Private livestream events, branded for Gotham Media House.</h1>
+      <p class="hero-copy">Share a clean, password-protected event page with clients while YouTube handles the heavy lifting behind the scenes.</p>
+    </section>
+
+    <section class="event-card">
+      <div class="event-info">
+        <p class="eyebrow">Current Event</p>
+        <h2 id="eventTitle">Client Live Event</h2>
+        <p id="eventDescription">Enter the event password to access the private livestream.</p>
+      </div>
+
+      <div id="loginBox" class="login-box">
+        <label for="passwordInput">Event Password</label>
+        <input id="passwordInput" type="password" placeholder="Enter password" autocomplete="current-password" />
+        <button onclick="checkPassword()">Watch Live</button>
+        <p id="errorMessage" class="error-message"></p>
+      </div>
+
+      <div id="playerBox" class="player-box hidden">
+        <div class="video-wrapper">
+          <iframe
+            id="youtubePlayer"
+            title="Gotham Media House Live Stream"
+            src="https://www.youtube.com/embed/REPLACE_VIDEO_ID?rel=0&modestbranding=1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <p class="viewer-note">You are watching a private Gotham Media House livestream.</p>
+      </div>
+    </section>
+
+    <section class="details-grid">
+      <div>
+        <h3>For Viewers</h3>
+        <p>Use the event password provided by Gotham Media House. No YouTube account is required unless the event is configured as private inside YouTube.</p>
+      </div>
+      <div>
+        <h3>For Producers</h3>
+        <p>Send your program feed to YouTube Live from OBS, vMix, Wirecast, or a hardware encoder. Replace the video ID in this site for each event.</p>
+      </div>
+      <div>
+        <h3>Support</h3>
+        <p>If the stream does not start, refresh the page or contact your Gotham Media House production contact.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Gotham Media House LLC. Live, executed with precision.
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
