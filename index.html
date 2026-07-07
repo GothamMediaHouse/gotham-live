@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gotham Media House Live</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <header class="hero">
+      <div class="brand-mark">GMH</div>
+      <p class="eyebrow">Private Livestream Portal</p>
+      <h1 data-site-title>Gotham Media House Live</h1>
+      <p data-site-subtitle>Private livestream access for clients and guests.</p>
+    </header>
+
+    <section class="event-list" data-event-list></section>
+
+    <section class="access-card hidden" data-event-panel>
+      <a class="back-link" data-back-link href="/">← Back to events</a>
+      <p class="eyebrow" data-event-date>Private Event</p>
+      <h2 data-event-title>Client Live Event</h2>
+      <p data-event-description>Enter the event password to access the private livestream.</p>
+
+      <form class="password-form" data-password-form>
+        <label for="password">Event Password</label>
+        <input id="password" data-password-input type="password" autocomplete="off" placeholder="Enter password" />
+        <button type="submit">Watch Live</button>
+        <p class="error" data-error></p>
+      </form>
+
+      <div class="player-wrap hidden" data-player-wrap>
+        <iframe
+          data-player
+          title="Live Stream"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    <footer>
+      <p>Produced by Gotham Media House</p>
+    </footer>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
